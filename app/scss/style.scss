@@ -1,0 +1,643 @@
+@import 'vars';
+@import 'global';
+
+
+// header, slide 1 start
+
+
+.header {
+    height: 714px;
+    background-size: cover;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin: 41px auto 43px 60px;
+    }
+
+    &__menu-item {
+
+        &+li {
+            margin-left: 50px;
+        }
+        
+    }
+
+    &__menu-list {
+        
+        display: inline;
+    
+        
+        &+li {
+            margin-left: 50px;
+        }
+    }
+
+    &__menu-link {
+        text-decoration: none;
+        color: white;
+    }
+
+    &__slider {
+        display: flex;
+        justify-content: start;
+    }
+
+    &__slider-dots {
+        margin: 195px auto auto 23px;  
+    }
+
+    &__slider-dots-list {
+        color:grey;
+        list-style-type: none;
+        font-size: 14px;
+        line-height: 18px;
+        border-bottom: solid 1px grey;
+        width: 13px;
+
+        &+li {
+            margin-top: 14px;
+        }
+        
+    }
+
+
+    &__slider-right {
+        margin-left: 58px;
+        margin-top: 122px;
+    }
+
+    &__slider-title {
+        font-size: 60px;
+        font-weight: bold;
+        line-height: 75px;
+        color: white;
+    }
+
+    &__slider-text {
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: bold;
+        max-width: 569px;
+        color: white;
+    }
+
+    &__slider-img {
+        position: absolute;
+        left: 178px;
+        top: 546px;
+    }
+
+    &__slider-arrow {
+        position: absolute;
+        left: 178px;
+        top: 452px;
+    }
+
+    &__slider-arrow-left {
+        margin-right: 39px;
+    }
+}
+
+.one {
+    position: relative;
+    color: white;
+    border-bottom: none;
+
+    &::after {
+        position: absolute;
+        content: url(../images/line.png);
+        left: -64px;
+        top: 6px
+    }
+
+    
+}
+
+// header, slide 1 end
+
+
+// slide (comand) 2 start
+
+.comand {
+    position: relative;
+    height: 714px;
+    background-size: cover;
+
+    &__slider {
+        display: flex;
+        justify-content: start;
+    }
+
+    &__slider-dots {
+        margin: 195px auto auto 23px;  
+    }
+
+    &__slider-dots-list {
+        color:grey;
+        list-style-type: none;
+        font-size: 14px;
+        line-height: 18px;
+        border-bottom: solid 1px grey;
+        width: 13px;
+
+        &+li {
+            margin-top: 14px;
+        }
+        
+    }
+
+    &__slider-right {
+        position: relative;
+        margin-left: 58px;
+        margin-top: 50px;
+        z-index: 1;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 60px;
+        color: white;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+        max-width: 970px;
+        color: #B7B9B8;
+    }
+
+    &__btn {
+        position: absolute;
+        border: solid 2px white;
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 5px 10px;
+        top: 70px;
+        right: -234px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 90px;  
+        margin-right: -200px; 
+    
+    }
+
+    
+
+    &__item-name {
+        color: white;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    &__item-prof {
+        color: #B7B9B8;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+
+    
+
+    &__decor-1 {
+        position: absolute;
+        top: 484px;
+        left: 424px;
+    }
+
+    &__decor-2 {
+        position: absolute;
+        top: 316px;
+        right: 57px;
+    }
+
+
+}
+
+.two {
+    position: relative;
+    color: white;
+    border-bottom: none;
+
+    &::after {
+        position: absolute;
+        content: url(../images/line.png);
+        left: -64px;
+        top: 6px
+    }
+
+    
+}
+
+
+// slide (comand) 2 end
+
+// slide (advantage) 3 start
+
+.advantage {
+    position: relative;
+    height: 714px;
+    background-size: cover;
+
+    &__slider {
+        display: flex;
+        justify-content: start;
+    }
+
+    &__slider-dots {
+        margin: 195px auto auto 23px;  
+    }
+
+    &__slider-dots-list {
+        color:grey;
+        list-style-type: none;
+        font-size: 14px;
+        line-height: 18px;
+        border-bottom: solid 1px grey;
+        width: 13px;
+
+        &+li {
+            margin-top: 14px;
+        }
+        
+    }
+
+    &__slider-right {
+        position: relative;
+        margin-left: 58px;
+        margin-top: 50px;
+        z-index: 1;
+        display: flex;
+        justify-content: start;
+        
+    }
+
+    &__info {
+        margin-right: 82px;
+        margin-top: 90px;
+    }
+
+    &__number {
+        border: none;
+        background-color: white;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        align-items: center;
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: bold;
+        padding-top: 6px;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 28px;
+        color: white;
+        margin-top: 30px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+        color: #B7B9B8;
+        margin-top: 5px;
+    }
+
+    &__decor {
+        position: absolute;
+        top: 185px;
+        right: 497px;
+    }
+
+}
+
+.first {
+    max-width: 189px;
+}
+
+.second {
+    max-width: 278px;
+}
+
+.third {
+    max-width: 270px;
+}
+
+.fourth {
+    max-width: 219px;
+}
+
+.three {
+    position: relative;
+    color: white;
+    border-bottom: none;
+
+    &::after {
+        position: absolute;
+        content: url(../images/line.png);
+        left: -64px;
+        top: 6px
+    }
+
+    
+}
+
+// slide (advantage) 3 end
+
+// slide (price) 4 start
+
+.price {
+    position: relative;
+    height: 714px;
+    background-size: cover;
+
+    &__slider {
+        display: flex;
+        justify-content: start;
+    }
+
+    &__slider-dots {
+        margin: 195px auto auto 23px;  
+    }
+
+    &__slider-dots-list {
+        color:grey;
+        list-style-type: none;
+        font-size: 14px;
+        line-height: 18px;
+        border-bottom: solid 1px grey;
+        width: 13px;
+
+        &+li {
+            margin-top: 14px;
+        }
+        
+    }
+
+    &__slider-right {
+        position: relative;
+        margin-left: 58px;
+        margin-top: 50px;
+        z-index: 1;
+        
+    }
+
+    &__check {
+        display: flex;
+        justify-content: start;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: bold;
+        color: white;
+        margin-left: 30px;
+    }
+
+    &__info-title {
+        margin-right: 297px;
+        margin-top: 41px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: bold;
+        color: white;
+
+    }
+
+    &__info-item {
+        margin-top: 50px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+        color: #7C7C7C;
+        list-style-type: none;
+
+        &+li {
+            margin-top: 27px;
+        }
+    }
+
+    &__list-title {
+        margin-right: 45px;
+        margin-top: 40px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: bold;
+        color: white;
+
+        
+    }
+
+    &__list-item {
+        margin-top: 50px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+        color: #7C7C7C;
+        list-style-type: none;
+
+        &+li {
+            margin-top: 27px;
+        }
+    }
+
+    &__list-btn {
+        margin-top: 42px;
+        border: 2px solid white;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        color: white;
+        padding: 5px 10px;
+        background-color: transparent;
+        margin-left: 38px;
+        cursor: pointer;
+    }
+
+    &__decor {
+        position: absolute;
+        top: 169px;
+        left: 520px;
+    }
+}
+
+.four {
+    position: relative;
+    color: white;
+    border-bottom: none;
+
+    &::after {
+        position: absolute;
+        content: url(../images/line.png);
+        left: -64px;
+        top: 6px
+    }   
+}
+
+
+// slide (price) 4 end
+
+// slide (footer) 5 start
+
+.footer {
+    height: 714px;
+    background-size: cover;
+
+    &__slider-right {
+        display: flex;
+        justify-content: start;
+        margin-left: 202px;
+        margin-top: -170px
+    }
+
+    &__slider-dots-list {
+        color:grey;
+        list-style-type: none;
+        font-size: 14px;
+        line-height: 18px;
+        border-bottom: solid 1px grey;
+        width: 13px;
+
+        &+li {
+            margin-top: 14px;
+        }
+        
+    }
+
+    &__form {
+        background-color: white;
+        min-width: 470px;
+    }
+
+    
+
+    &__form-description {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 18px;
+        color: black;
+        padding-top: 28px;
+        padding-left: 30px;
+    }
+
+    &__form-title {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: bold;
+        color: black;
+        padding-left: 30px;
+    }
+
+    &__form-data {
+        border: none;
+        border-bottom: solid 1px #D5D5D5;
+        width: 400px;
+        padding-right: 50px;
+        padding-bottom: 11px;
+        color: black;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: normal;
+        margin-left: 18px;
+        outline: none;
+
+        &::placeholder {
+            color: black;
+        }
+    }
+
+    &__form-in {
+        border: none;
+    }
+
+    &__form-check {
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+
+    &__form-label {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: bold;
+        color: black;
+        margin-left: 15px;
+    }
+
+    &__form-btn {
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+        padding: 16px 168px 16px 169px;
+        margin-left: 18px;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+
+    &__adres {
+        background-color: #EAEAEA;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+        color: #7C7C7C;
+        width: 470px;
+        text-align: center;
+        align-items: center;
+        padding-left: 88px;
+        padding-right: 88px;
+        padding-top: 27px;
+        padding-bottom: 28px;
+    }
+
+}
+
+.name {
+    margin-top: 24px;
+}
+
+.mail{
+    margin-top: 34px;
+}
+
+.messadge {
+    margin-top: 34px;
+}
+
+.five {
+    position: relative;
+    color: white;
+    border-bottom: none;
+
+    &::after {
+        position: absolute;
+        content: url(../images/line.png);
+        left: -64px;
+        top: 6px
+    }   
+}
+
+// slide (footer) 5 end
+
+
+
+

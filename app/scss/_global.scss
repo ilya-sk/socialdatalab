@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::after {
+    box-sizing: inherit;
+}
+
+.box {
+    display: flex;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
