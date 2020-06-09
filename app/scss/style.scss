@@ -1,37 +1,34 @@
+@import 'fonts';
 @import 'vars';
 @import 'global';
 
 
-// header, slide 1 start
+// header, dots start
 
 
 .header {
-    height: 714px;
-    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent;
+    overflow: hidden;
 
     &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin: 40px auto 0px 60px;
     }
 
-    &__logo {
-        margin: 41px auto 43px 60px;
-    }
-
-    &__menu-item {
-
-        &+li {
-            margin-left: 50px;
-        }
-        
+    &__menu {
+        margin-left: 706px;
+        margin-top: -41px;
     }
 
     &__menu-list {
-        
+
         display: inline;
-    
-        
+
+
         &+li {
             margin-left: 50px;
         }
@@ -41,41 +38,52 @@
         text-decoration: none;
         color: white;
     }
+}
 
-    &__slider {
-        display: flex;
-        justify-content: start;
-    }
+.slider-nav {
+    position: fixed;
+    overflow: hidden;
+    z-index: 10;
+    left: 63px;
+    top: 282px;
 
-    &__slider-dots {
-        margin: 195px auto auto 23px;  
-    }
 
-    &__slider-dots-list {
-        color:grey;
-        list-style-type: none;
+    &__dots {
+        background-color: transparent;
+        z-index: 110;
+        border: none;
+        color: grey;
         font-size: 14px;
         line-height: 18px;
-        border-bottom: solid 1px grey;
-        width: 13px;
+        display: block;
 
-        &+li {
-            margin-top: 14px;
+        &+a {
+            margin-top: 15px;
         }
-        
+
     }
 
 
-    &__slider-right {
-        margin-left: 58px;
-        margin-top: 122px;
-    }
+}
+
+
+
+// header, dots end
+
+// slider 1 (information) start
+
+.information {
+    // height: 714px;
+    height: 100vh;
+    background-size: cover;
 
     &__slider-title {
         font-size: 60px;
         font-weight: bold;
         line-height: 75px;
         color: white;
+        padding-left: 136px;
+        padding-top: 202px;
     }
 
     &__slider-text {
@@ -84,86 +92,56 @@
         font-weight: bold;
         max-width: 569px;
         color: white;
+        margin-left: 136px;
+        margin-top: 5px;
     }
 
-    &__slider-img {
-        position: absolute;
-        left: 178px;
-        top: 546px;
+    &__slider-btn {
+        border: none;
+        background-color: transparent;
+        margin-right: 22px;
     }
 
     &__slider-arrow {
-        position: absolute;
-        left: 178px;
-        top: 452px;
-    }
+        margin-left: 129px;
+        margin-top: 60px;
 
-    &__slider-arrow-left {
-        margin-right: 39px;
     }
 }
 
-.one {
-    position: relative;
-    color: white;
-    border-bottom: none;
-
-    &::after {
-        position: absolute;
-        content: url(../images/line.png);
-        left: -64px;
-        top: 6px
-    }
-
-    
-}
-
-// header, slide 1 end
+// slider 1 (information) end
 
 
-// slide (comand) 2 start
+// slider 2 (comand)  start
 
 .comand {
+    background-color: black;
+    // height: 714px;
+    height: 100vh;
     position: relative;
-    height: 714px;
-    background-size: cover;
 
     &__slider {
         display: flex;
         justify-content: start;
     }
 
-    &__slider-dots {
-        margin: 195px auto auto 23px;  
-    }
 
-    &__slider-dots-list {
-        color:grey;
-        list-style-type: none;
-        font-size: 14px;
-        line-height: 18px;
-        border-bottom: solid 1px grey;
-        width: 13px;
 
-        &+li {
-            margin-top: 14px;
-        }
-        
-    }
-
-    &__slider-right {
-        position: relative;
-        margin-left: 58px;
-        margin-top: 50px;
+    &__slider-top {
+        padding-top: 371px;
         z-index: 1;
     }
 
     &__title {
+        margin-top: -214px;
+        margin-left: -39px;
         font-size: 48px;
         font-weight: bold;
         line-height: 60px;
         color: white;
     }
+
+
 
     &__text {
         font-size: 16px;
@@ -171,37 +149,46 @@
         font-weight: bold;
         max-width: 970px;
         color: #B7B9B8;
+        margin-top: 18px;
+        margin-left: -38px;
     }
 
     &__btn {
         position: absolute;
+        padding: 11px 25px;
+        margin-right: -140px;
+        right: 353px;
+        top: 230px;
         border: solid 2px white;
+        display: inline-block;
         text-decoration: none;
         color: white;
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
-        padding: 5px 10px;
-        top: 70px;
-        right: -234px;
+        padding: 11px 25px;
+        margin-right: -140px;
     }
 
     &__info {
         display: flex;
-        justify-content: space-between;
-        margin-top: 90px;  
-        margin-right: -200px; 
-    
+        justify-content: flex-start;
+        margin-top: -29px;
     }
 
-    
+    &__item-foto {
+        margin-left: -39px;
+        margin-right: 169px;
+    }
+
 
     &__item-name {
         color: white;
         font-size: 22px;
         line-height: 28px;
         font-weight: bold;
-        margin-top: 20px;
+        margin-top: 25px;
+        margin-left: -39px;
     }
 
     &__item-prof {
@@ -209,86 +196,41 @@
         font-size: 16px;
         line-height: 20px;
         font-weight: normal;
+        margin-top: 2px;
+        margin-left: -39px;
     }
-
-    
-
-    &__decor-1 {
-        position: absolute;
-        top: 484px;
-        left: 424px;
-    }
-
-    &__decor-2 {
-        position: absolute;
-        top: 316px;
-        right: 57px;
-    }
-
-
 }
-
-.two {
-    position: relative;
-    color: white;
-    border-bottom: none;
-
-    &::after {
-        position: absolute;
-        content: url(../images/line.png);
-        left: -64px;
-        top: 6px
-    }
-
-    
-}
-
 
 // slide (comand) 2 end
 
 // slide (advantage) 3 start
 
 .advantage {
-    position: relative;
-    height: 714px;
-    background-size: cover;
+    background-color: black;
+    // position: relative;
+    // height: 714px;
+    height: 100vh;
 
-    &__slider {
+    &__inner {
         display: flex;
         justify-content: start;
+        padding-top: 250px;
     }
 
-    &__slider-dots {
-        margin: 195px auto auto 23px;  
-    }
+    // &__slider-right {
+    //     position: relative;
+    //     margin-left: 58px;
+    //     margin-top: 50px;
+    //     z-index: 1;
+    //     display: flex;
+    //     justify-content: start;
 
-    &__slider-dots-list {
-        color:grey;
-        list-style-type: none;
-        font-size: 14px;
-        line-height: 18px;
-        border-bottom: solid 1px grey;
-        width: 13px;
 
-        &+li {
-            margin-top: 14px;
-        }
-        
-    }
-
-    &__slider-right {
-        position: relative;
-        margin-left: 58px;
-        margin-top: 50px;
-        z-index: 1;
-        display: flex;
-        justify-content: start;
-        
-    }
 
     &__info {
-        margin-right: 82px;
-        margin-top: 90px;
+        width: calc(100% / 4 + 1rem);
+        margin-left: -39px;
+        
     }
 
     &__number {
@@ -313,6 +255,7 @@
     }
 
     &__text {
+        // width: calc(100% / 4);
         font-size: 16px;
         line-height: 20px;
         font-weight: bold;
@@ -320,11 +263,6 @@
         margin-top: 5px;
     }
 
-    &__decor {
-        position: absolute;
-        top: 185px;
-        right: 497px;
-    }
 
 }
 
@@ -344,59 +282,20 @@
     max-width: 219px;
 }
 
-.three {
-    position: relative;
-    color: white;
-    border-bottom: none;
 
-    &::after {
-        position: absolute;
-        content: url(../images/line.png);
-        left: -64px;
-        top: 6px
-    }
-
-    
-}
 
 // slide (advantage) 3 end
 
 // slide (price) 4 start
 
 .price {
-    position: relative;
+    background-color: black;
     height: 714px;
-    background-size: cover;
+
 
     &__slider {
         display: flex;
         justify-content: start;
-    }
-
-    &__slider-dots {
-        margin: 195px auto auto 23px;  
-    }
-
-    &__slider-dots-list {
-        color:grey;
-        list-style-type: none;
-        font-size: 14px;
-        line-height: 18px;
-        border-bottom: solid 1px grey;
-        width: 13px;
-
-        &+li {
-            margin-top: 14px;
-        }
-        
-    }
-
-    &__slider-right {
-        position: relative;
-        margin-left: 58px;
-        margin-top: 50px;
-        z-index: 1;
-        
     }
 
     &__check {
@@ -409,12 +308,14 @@
         line-height: 60px;
         font-weight: bold;
         color: white;
-        margin-left: 30px;
+        margin-left: -39px;
+        padding-top: 156px
     }
 
     &__info-title {
-        margin-right: 297px;
-        margin-top: 41px;
+        margin-right: -10px;
+        margin-top: 258px;
+        margin-left: -224px;
         font-size: 22px;
         line-height: 28px;
         font-weight: bold;
@@ -436,61 +337,52 @@
     }
 
     &__list-title {
-        margin-right: 45px;
-        margin-top: 40px;
+
+        margin-right: -339px;
+        margin-top: 258px;
+        margin-left: 262px;
         font-size: 22px;
         line-height: 28px;
         font-weight: bold;
         color: white;
 
-        
+
     }
 
     &__list-item {
-        margin-top: 50px;
+        margin-bottom: -24px;
+        margin-top: 51px;
         font-size: 16px;
         line-height: 20px;
         font-weight: bold;
         color: #7C7C7C;
-        list-style-type: none;
+        
 
         &+li {
             margin-top: 27px;
         }
     }
 
+
+
     &__list-btn {
-        margin-top: 42px;
+
+        margin-top: 583px;
         border: 2px solid white;
         font-size: 14px;
         font-weight: 500;
         line-height: 18px;
         color: white;
-        padding: 5px 10px;
+        padding: 11px 25px;
         background-color: transparent;
         margin-left: 38px;
         cursor: pointer;
     }
 
-    &__decor {
-        position: absolute;
-        top: 169px;
-        left: 520px;
-    }
+
 }
 
-.four {
-    position: relative;
-    color: white;
-    border-bottom: none;
 
-    &::after {
-        position: absolute;
-        content: url(../images/line.png);
-        left: -64px;
-        top: 6px
-    }   
-}
 
 
 // slide (price) 4 end
@@ -498,36 +390,26 @@
 // slide (footer) 5 start
 
 .footer {
-    height: 714px;
-    background-size: cover;
+    height: 100vh;
+    // height: 714px;
+    background-image: url(../images/footerimg.png);
+    background-position: left 136px center;
+    background-repeat: no-repeat;
+    background-color: black;
 
-    &__slider-right {
+    &__slider {
         display: flex;
         justify-content: start;
         margin-left: 202px;
-        margin-top: -170px
-    }
-
-    &__slider-dots-list {
-        color:grey;
-        list-style-type: none;
-        font-size: 14px;
-        line-height: 18px;
-        border-bottom: solid 1px grey;
-        width: 13px;
-
-        &+li {
-            margin-top: 14px;
-        }
-        
+        margin-top: 0px
     }
 
     &__form {
+        margin-top: 108px;
+        margin-left: 459px;
         background-color: white;
         min-width: 470px;
     }
-
-    
 
     &__form-description {
         font-size: 14px;
@@ -544,6 +426,7 @@
         font-weight: bold;
         color: black;
         padding-left: 30px;
+        margin-top: 6px;
     }
 
     &__form-data {
@@ -570,7 +453,7 @@
 
     &__form-check {
         margin-left: 18px;
-        margin-top: 15px;
+        margin-top: 9px;
     }
 
     &__form-label {
@@ -578,7 +461,7 @@
         line-height: 18px;
         font-weight: bold;
         color: black;
-        margin-left: 15px;
+        margin-left: 11px;
     }
 
     &__form-btn {
@@ -591,6 +474,7 @@
         padding: 16px 168px 16px 169px;
         margin-left: 18px;
         margin-top: 12px;
+        margin-bottom: 20px;
         cursor: pointer;
     }
 
@@ -605,39 +489,81 @@
         align-items: center;
         padding-left: 88px;
         padding-right: 88px;
-        padding-top: 27px;
-        padding-bottom: 28px;
+        padding-top: 32px;
+        padding-bottom: 34px;
     }
 
 }
 
 .name {
-    margin-top: 24px;
+    margin-top: 18px;
+    margin-left: 15px;
 }
 
-.mail{
-    margin-top: 34px;
+.mail {
+    margin-top: 18px;
+    margin-left: 15px;
 }
 
 .messadge {
-    margin-top: 34px;
+    margin-top: 18px;
+    margin-left: 15px;
 }
 
-.five {
-    position: relative;
-    color: white;
-    border-bottom: none;
 
-    &::after {
-        position: absolute;
-        content: url(../images/line.png);
-        left: -64px;
-        top: 6px
-    }   
-}
 
 // slide (footer) 5 end
 
+// dods for slider start
+
+.slick-dots {
+    background-color: transparent;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: auto;
+    bottom: auto;
+    top: 344px;
+    left: 0;
+    transform: translateY(-50%);
+    left: auto;
+    color: #fff;
+    display: block;
 
 
 
+    li {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 14px;
+        margin-left: 24px;
+
+
+        &:before {
+            content: '';
+            background: #fff;
+            color: #fff;
+            height: 2px;
+            width: 77px;
+            border-radius: 0;
+            position: absolute;
+            top: 50%;
+            right: auto;
+            left: 0;
+            transform: translateY(-50%);
+            transition: all .3s ease-in-out;
+            opacity: 0.6;
+        }
+
+
+        &.slick-active {
+            button {
+                &:before {
+                    width: 70px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
