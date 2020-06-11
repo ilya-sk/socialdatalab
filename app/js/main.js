@@ -8,15 +8,16 @@
 //   dots: true,
 //     });  
 // });
-$(function() {
-	$('#fullpage').fullpage({
-		//options here
-		autoScrolling:true,
-        scrollHorizontally: true,
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+      autoScrolling:true,
+      scrollHorizontally: true,
+      navigation: true,
+      navigationPosition: 'left',
+      slidesNavigation: true,
+      navigationTooltips: ['01', '02', '03', '04', '05'],
+      showActiveTooltip: true,
+      scrollingSpeed: 700,
+    });
   
-	});
-
-	//methods
-	$.fn.fullpage.setAllowScrolling(false);
-});
-
+  });

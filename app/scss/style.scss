@@ -24,6 +24,8 @@
         margin-top: -41px;
     }
 
+    
+
     &__menu-list {
 
         display: inline;
@@ -37,6 +39,11 @@
     &__menu-link {
         text-decoration: none;
         color: white;
+        transition: 1s;
+    }
+
+    &__menu-link:hover {
+        color: #db541a;
     }
 }
 
@@ -63,6 +70,10 @@
 
     }
 
+    &:hover {
+        display: none;
+    }
+
 
 }
 
@@ -73,9 +84,10 @@
 // slider 1 (information) start
 
 .information {
-    // height: 714px;
-    height: 100vh;
+    height: 714px;
+    // height: 100vh;
     background-size: cover;
+    position: relative;
 
     &__slider-title {
         font-size: 60px;
@@ -83,7 +95,7 @@
         line-height: 75px;
         color: white;
         padding-left: 136px;
-        padding-top: 202px;
+        padding-top: 206px;
     }
 
     &__slider-text {
@@ -96,6 +108,15 @@
         margin-top: 5px;
     }
 
+    &::after {
+        content: url(../images/decor.png);
+        position: absolute;
+        top: 518px;
+        left: 135px;
+    }
+
+    
+
     &__slider-btn {
         border: none;
         background-color: transparent;
@@ -107,6 +128,7 @@
         margin-top: 60px;
 
     }
+
 }
 
 // slider 1 (information) end
@@ -116,9 +138,17 @@
 
 .comand {
     background-color: black;
-    // height: 714px;
-    height: 100vh;
+    height: 714px;
+    // height: 100vh;
     position: relative;
+
+    &::after {
+        content: url(../images/comandline.svg);
+        position: absolute;
+        left: 135px;
+        top: 0;
+    }
+
 
     &__slider {
         display: flex;
@@ -170,6 +200,12 @@
         margin-right: -140px;
     }
 
+    &__btn:hover {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+    }
+
     &__info {
         display: flex;
         justify-content: flex-start;
@@ -179,6 +215,7 @@
     &__item-foto {
         margin-left: -39px;
         margin-right: 169px;
+    
     }
 
 
@@ -191,6 +228,8 @@
         margin-left: -39px;
     }
 
+    
+
     &__item-prof {
         color: #B7B9B8;
         font-size: 16px;
@@ -198,7 +237,24 @@
         font-weight: normal;
         margin-top: 2px;
         margin-left: -39px;
+        z-index: 100;
     }
+}
+
+.decor-one::before {
+    content: url(../images/comanddec.png);
+    position: absolute;
+    bottom: 3px;
+    left: 367px;
+    z-index: 1;
+}
+
+.decor-two::before {
+    content: url(../images/comanddec.png);
+    position: absolute;
+    top: 303px;
+    right: 165px;
+    z-index: 1;
 }
 
 // slide (comand) 2 end
@@ -207,29 +263,28 @@
 
 .advantage {
     background-color: black;
-    // position: relative;
-    // height: 714px;
-    height: 100vh;
+    position: relative;
+    height: 714px;
+    // height: 100vh;
 
-    &__inner {
-        display: flex;
-        justify-content: start;
-        padding-top: 250px;
+    &::after {
+        content: url(../images/adline.png);
+        position: absolute;
+        left: 135px;
+        top: 0;
     }
 
-    // &__slider-right {
-    //     position: relative;
-    //     margin-left: 58px;
-    //     margin-top: 50px;
-    //     z-index: 1;
-    //     display: flex;
-    //     justify-content: start;
-
-
+    &__inner {
+        margin-left: -70px;
+        margin-right: 38px;
+        display: flex;
+        justify-content: start;
+        padding-top: 247px;
+    }
 
     &__info {
-        width: calc(100% / 4 + 1rem);
-        margin-left: -39px;
+        width: calc(100% / 4 - 22.5px);
+        margin-left: 30px;
         
     }
 
@@ -245,6 +300,8 @@
         font-weight: bold;
         padding-top: 6px;
     }
+
+    
 
     &__title {
         font-size: 22px;
@@ -266,21 +323,14 @@
 
 }
 
-.first {
-    max-width: 189px;
+.decor-three::before {
+    content: url(../images/comanddec.png);
+    position: absolute;
+    top: 185px;
+    right: 563px;
+    z-index: 1;
 }
 
-.second {
-    max-width: 278px;
-}
-
-.third {
-    max-width: 270px;
-}
-
-.fourth {
-    max-width: 219px;
-}
 
 
 
@@ -291,6 +341,14 @@
 .price {
     background-color: black;
     height: 714px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: url(../images/priceline.png);
+        left: 135px;
+        top: 0;
+    }
 
 
     &__slider {
@@ -338,7 +396,7 @@
 
     &__list-title {
 
-        margin-right: -339px;
+        margin-right: -250px;
         margin-top: 258px;
         margin-left: 262px;
         font-size: 22px;
@@ -379,7 +437,21 @@
         cursor: pointer;
     }
 
+    
+    &__list {
+        margin-left: 10px;
+        margin-top: 65px;
+    }
 
+
+}
+
+.decor-four::before {
+    content: url(../images/comanddec.png);
+    position: absolute;
+    top: 167px;
+    left: 405px;
+    z-index: 1;
 }
 
 
@@ -390,8 +462,8 @@
 // slide (footer) 5 start
 
 .footer {
-    height: 100vh;
-    // height: 714px;
+    // height: 100vh;
+    height: 714px;
     background-image: url(../images/footerimg.png);
     background-position: left 136px center;
     background-repeat: no-repeat;
@@ -478,6 +550,11 @@
         cursor: pointer;
     }
 
+    &__form-btn:hover {
+        background-color: white;
+        color: black;
+    }
+
     &__adres {
         background-color: #EAEAEA;
         font-size: 16px;
@@ -516,54 +593,26 @@
 
 // dods for slider start
 
-.slick-dots {
-    background-color: transparent;
-    position: fixed;
-    z-index: 5;
-    width: 100%;
-    height: auto;
-    bottom: auto;
-    top: 344px;
-    left: 0;
-    transform: translateY(-50%);
-    left: auto;
-    color: #fff;
-    display: block;
-
-
-
-    li {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-top: 14px;
-        margin-left: 24px;
-
-
-        &:before {
-            content: '';
-            background: #fff;
-            color: #fff;
-            height: 2px;
-            width: 77px;
-            border-radius: 0;
-            position: absolute;
-            top: 50%;
-            right: auto;
-            left: 0;
-            transform: translateY(-50%);
-            transition: all .3s ease-in-out;
-            opacity: 0.6;
-        }
-
-
-        &.slick-active {
-            button {
-                &:before {
-                    width: 70px;
-                    opacity: 1;
-                }
-            }
-        }
-    }
+.left {
+    margin-left: 38px;
+    font-size: 14px;
+    
+    
 }
+
+.fp-tooltip {
+    margin-top: 0px;
+    margin-left: -19px;
+    z-index: 200;
+    
+    
+}
+.active::before {
+    content: url(../images/active.svg);
+    margin-left: -60px;
+}
+
+.fp-show-active + li{
+    margin-top: -69px !important;
+}
+
