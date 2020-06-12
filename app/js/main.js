@@ -1,13 +1,4 @@
-// $(function(){
 
-//     $('.slider-content').slick({
-//         vertical: true,
-//   verticalSwiping: true,
-//   arrows: false,
-//   infinite: true,
-//   dots: true,
-//     });  
-// });
 $(document).ready(function() {
     $('#fullpage').fullpage({
       autoScrolling:true,
@@ -19,5 +10,14 @@ $(document).ready(function() {
       showActiveTooltip: true,
       scrollingSpeed: 700,
     });
+
+    $('.slider__inner').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      prevArrow: '.slider__arrow--left',
+      nextArrow: '.slider__arrow--right',
+        });  
   
   });
