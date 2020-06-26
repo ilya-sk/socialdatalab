@@ -16,6 +16,7 @@ gulp.task('sass', function(){
                 overrideBrowserslist: ['last 8 versions']
             }))
             .pipe(gulp.dest('app/css'))
+            .pipe(gulp.dest('./build/css')) 
             .pipe(browserSync.reload({stream: true}))
 });
 
@@ -29,6 +30,7 @@ gulp.task('style', function(){
             .pipe(concat('libs.min.css'))
             .pipe(cssmin())
             .pipe(gulp.dest('app/css'))
+            .pipe(gulp.dest('./build/css'))
 
 });
 
@@ -45,12 +47,24 @@ gulp.task('script', function(){
 
 gulp.task('html', function(){
     return gulp.src('app/*.html')
+    .pipe(gulp.dest('./build'))
     .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('js', function(){
     return gulp.src('app/js/*.js')
+    .pipe(gulp.dest('./build/js'))
     .pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('fonts', function() {
+    return gulp.src('app/fonts/*')
+    .pipe(gulp.dest('./build/fonts')) 
+});
+
+gulp.task('images', function() {
+    return gulp.src('app/images/*')
+    .pipe(gulp.dest('./build/images')) 
 });
 
 gulp.task('browser-sync', function() {
@@ -67,4 +81,6 @@ gulp.task('watch', function(){
     gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
 
+
+gulp.task('build', gulp.parallel('style', 'sass', 'html', 'images', 'fonts', 'js'));
 gulp.task('default', gulp.parallel('style', 'script', 'sass', 'watch', 'browser-sync'))

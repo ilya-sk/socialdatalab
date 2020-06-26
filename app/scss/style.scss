@@ -25,17 +25,17 @@
         align-items: center;
     }
 
-     &__menu-list {
+    &__menu-list {
         display: flex;
         margin: 0;
         list-style: none;
-     }
+    }
 
-     &__menu-item {
-         & + & {
-             margin-left: 50px;
-         }
-     }
+    &__menu-item {
+        &+& {
+            margin-left: 50px;
+        }
+    }
 
     &__menu-link {
         text-decoration: none;
@@ -96,8 +96,8 @@
         position: absolute;
         bottom: 36%;
         z-index: 10;
-        
-        
+
+
         &::after {
             content: '';
             position: absolute;
@@ -171,9 +171,9 @@
         width: 100%;
         max-width: 1070px;
         height: 100%;
-        background-image: url(../images/slide2line.svg);
+        background-image: url(../images/coline.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        
     }
 
 
@@ -186,7 +186,7 @@
 
     &__slider-top {
         position: relative;
-        
+
     }
 
     &__title {
@@ -205,7 +205,7 @@
         max-width: 970px;
         color: #B7B9B8;
         margin-top: 18px;
-        margin-bottom: 130px;   
+        margin-bottom: 130px;
     }
 
     &__btn {
@@ -250,7 +250,7 @@
         margin-top: 25px;
     }
 
-    
+
 
     &__item-prof {
         color: #B7B9B8;
@@ -285,7 +285,7 @@
 .decor-two::before {
     top: -38px;
     left: 56px;
-    
+
 }
 
 // slide (comand) 2 end
@@ -313,7 +313,7 @@
 
     &__info {
         width: calc(100% / 4 - 22.5px);
-        margin-left: 30px;   
+        margin-left: 30px;
     }
 
     &__number {
@@ -329,7 +329,7 @@
         padding-top: 6px;
     }
 
-    
+
 
     &__title {
         font-size: 22px;
@@ -362,7 +362,7 @@
 
 .price {
     background-color: black;
-    height: 714px;
+    height: 100vh;
     position: relative;
 
     &::after {
@@ -370,77 +370,45 @@
         content: url(../images/priceline.png);
         left: 135px;
         top: 0;
+        
     }
 
-    &__slider {
-        display: flex;
-        justify-content: start;
+    &__table {
+        text-align: left;
+        width: calc(100%);
+        
+        
     }
 
-    &__check {
-        display: flex;
-        justify-content: start;
-    }
+
 
     &__title {
         font-size: 48px;
         line-height: 60px;
         font-weight: bold;
         color: white;
-        // margin-left: -39px;
-        padding-top: 156px
-    }
-
-    &__info-title {
-        margin-right: -10px;
-        margin-top: 258px;
-        margin-left: -224px;
-        font-size: 22px;
-        line-height: 28px;
-        font-weight: bold;
-        color: white;
-    }
-
-    &__info-item {
-        margin-top: 50px;
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: bold;
-        color: #7C7C7C;
-        list-style-type: none;
-
-        &+li {
-            margin-top: 27px;
-        }
+        text-align: left;
+        padding-bottom: 41px;
+        padding-top: 60px;
     }
 
     &__list-title {
-
-        margin-right: -250px;
-        margin-top: 258px;
-        margin-left: 262px;
         font-size: 22px;
         line-height: 28px;
         font-weight: bold;
         color: white;
     }
 
-    &__list-item {
-        margin-bottom: -24px;
-        margin-top: 51px;
+    &__list-inner {
         font-size: 16px;
         line-height: 20px;
         font-weight: bold;
         color: #7C7C7C;
-        
-
-        &+li {
-            margin-top: 27px;
-        }
     }
-    &__list-btn {
 
-        margin-top: 583px;
+        &__list-btn {
+
+        // margin-top: 583px;
         border: 2px solid white;
         font-size: 14px;
         font-weight: 500;
@@ -448,25 +416,153 @@
         color: white;
         padding: 11px 25px;
         background-color: transparent;
-        margin-left: 38px;
+        // margin-left: 38px;
         cursor: pointer;
     }
 
-    &__list {
-        margin-left: 10px;
-        margin-top: 65px;
-    }
+
+}
+
+.table__btn {
+    padding-top: 37px;
+}
+
+// td,
+// th {
+//     padding: 10px 10px;
+// }
 
 
+
+td {
+    padding-bottom: 27px;
+
+}
+
+th {
+    padding-bottom: 50px;
 }
 
 .decor-four::before {
     content: url(../images/comanddec.png);
     position: absolute;
-    top: 167px;
+    top: 125px;
     left: 405px;
-    z-index: 1;
+    // z-index: 1;
 }
+
+// .table__inner {
+//     padding-top: 41px;
+// }
+
+
+// .price {
+//     background-color: black;
+//     height: 714px;
+//     position: relative;
+
+//     &::after {
+//         position: absolute;
+//         content: url(../images/priceline.png);
+//         left: 135px;
+//         top: 0;
+//     }
+
+//     &__slider {
+//         display: flex;
+//         justify-content: start;
+//     }
+
+//     &__check {
+//         display: flex;
+//         justify-content: start;
+//     }
+
+//     &__title {
+//         font-size: 48px;
+//         line-height: 60px;
+//         font-weight: bold;
+//         color: white;
+//         // margin-left: -39px;
+//         padding-top: 156px
+//     }
+
+//     &__info-title {
+//         margin-right: -10px;
+//         margin-top: 258px;
+//         margin-left: -224px;
+//         font-size: 22px;
+//         line-height: 28px;
+//         font-weight: bold;
+//         color: white;
+//     }
+
+//     &__info-item {
+//         margin-top: 50px;
+//         font-size: 16px;
+//         line-height: 20px;
+//         font-weight: bold;
+//         color: #7C7C7C;
+//         list-style-type: none;
+
+//         &+li {
+//             margin-top: 27px;
+//         }
+//     }
+
+//     &__list-title {
+
+//         margin-right: -250px;
+//         margin-top: 258px;
+//         margin-left: 262px;
+//         font-size: 22px;
+//         line-height: 28px;
+//         font-weight: bold;
+//         color: white;
+//     }
+
+//     &__list-item {
+//         margin-bottom: -24px;
+//         margin-top: 51px;
+//         font-size: 16px;
+//         line-height: 20px;
+//         font-weight: bold;
+//         color: #7C7C7C;
+
+
+//         &+li {
+//             margin-top: 27px;
+//         }
+//     }
+//     &__list-btn {
+
+//         margin-top: 583px;
+//         border: 2px solid white;
+//         font-size: 14px;
+//         font-weight: 500;
+//         line-height: 18px;
+//         color: white;
+//         padding: 11px 25px;
+//         background-color: transparent;
+//         margin-left: 38px;
+//         cursor: pointer;
+//     }
+
+//     &__list {
+//         margin-left: 10px;
+//         margin-top: 65px;
+//     }
+
+
+// }
+
+// .decor-four::before {
+//     content: url(../images/comanddec.png);
+//     position: absolute;
+//     top: 167px;
+//     left: 405px;
+//     z-index: 1;
+// }
 
 
 // slide (price) 4 end
@@ -608,8 +704,8 @@
 .left {
     margin-left: 38px;
     font-size: 14px;
-    
-    
+
+
 }
 
 .fp-tooltip {
@@ -617,14 +713,14 @@
     margin-left: -19px;
     z-index: 200;
 }
-    
-    
+
+
 
 // .active::before {
 //     content: url(../images/active.svg);
 //     margin-left: -60px;
 // }
 
-.fp-show-active + li{
+.fp-show-active+li {
     margin-top: -69px !important;
 }
